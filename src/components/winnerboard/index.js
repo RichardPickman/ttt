@@ -1,18 +1,17 @@
-import Button from "../buttons";
-import './winner.css'
+import './winner.css';
 
 function Winner(props) {
     const { reset } = props;
 
     const popup = <div className="winner"> {props.winner} won in {props.toWinTurns} turns! </div>
     const buttons = (
-        <div className="button"> 
-            <button className="button" onClick={resetGame}> 
-                Reset 
-            </button> 
-            <button className="button" onClick={score}> 
-                Score 
-            </button> 
+        <div className="button">
+            <button className="button" onClick={resetGame}>
+                Reset
+            </button>
+            <button className="button" onClick={score}>
+                Score
+            </button>
         </div>
     )
 
