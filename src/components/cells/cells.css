@@ -1,0 +1,29 @@
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 0.3em;
+}
+
+.x {
+    background: var(--black-color);
+    background-image: url('../assets/svg/xmark-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-image: url('../assets/svg/xmark-solid.svg');
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+}
+
+.o {
+    background: var(--black-color);
+    background-image: url('../assets/svg/o-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-image: url('../assets/svg/o-solid.svg');
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+}
