@@ -1,7 +1,7 @@
-import { CellState } from '../../types/index'
+import { CellState } from './types/index'
 
 
-const isWin = (symbol, cells) => {
+export const isWin = (symbol, cells) => {
 
     const combinations = [
         [0, 1, 2],
@@ -21,11 +21,11 @@ const isWin = (symbol, cells) => {
     return null;
 }
 
-const getWinner = (cells: CellState[]) => isWin('x', cells) || isWin('o', cells) || null;
+export const getWinner = (cells: CellState[]) => isWin('x', cells) || isWin('o', cells) || null;
 
-const getNextPlayer = currentPlayer => currentPlayer === 'x' ? 'o' : 'x';
+export const getNextPlayer = currentPlayer => currentPlayer === 'x' ? 'o' : 'x';
 
-const getInitialState = () => ({
+export const getInitialState = () => ({
     steps: { x: 0, o: 0 },
     cells: new Array(9).fill(null),
     currentPlayer: 'x',
