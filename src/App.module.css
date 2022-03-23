@@ -1,0 +1,16 @@
+body {
+  font-family: 'Merriweather', serif;
+  color: var(--text-color);
+
+  background-color: var(--primary-color);
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  width: 320px;
+  gap: 15px;
+}
