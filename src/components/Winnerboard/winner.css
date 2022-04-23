@@ -1,0 +1,12 @@
+.winner {
+    font-size: 25px;
+}
+
+.winner-block {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    justify-content: center;
+    align-items: center;
+}

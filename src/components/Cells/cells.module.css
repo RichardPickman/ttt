@@ -1,3 +1,8 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .cell {
     display: flex;
     justify-content: center;
@@ -6,6 +11,9 @@
     width: 90px;
     height: 90px;
     border-radius: 0.3em;
+    font-size: 40px;
+
+    background-color: beige;
 }
 
 .x {
