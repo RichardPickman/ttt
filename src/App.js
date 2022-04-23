@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { getInitialState, getNextPlayer, getWinner } from './helpers.ts';
 import styles from './App.module.css';
-
-import LeaderBoard  from './components/winner/index'
-import Board from './components/board';
+import Board from './components/Board';
 
 
 const App = () => {
@@ -33,7 +31,6 @@ const App = () => {
   return (
       <div className={styles.board}>
           {!winner && <Board cells={cells} onClick={onClick} />}
-          {winner && ( <LeaderBoard winner={winner} stat={steps[winner]} setState={setState} /> )}
       </div>
   );
 };
